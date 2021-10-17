@@ -18,6 +18,55 @@
             </div>
         </div>
     </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event);return false">
+            <div class="form-head"> PERSON ADDRESS FORM </div>
+            <div class="row-content">
+                <label class="label text" for="name">Full Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="" required> 
+                <error-output class="text-error" for="text"></error-output>           
+            </div> 
+            <div class="row-content">
+                <label class="label text" for="phone">Phone Number</label>
+                <input class="input" type="text" id="phone" name="phone" placeholder="" required> 
+                <error-output class="phone-error" for="text"></error-output>           
+            </div>  
+            <div class="row-content" >
+                <label class="label text" for="address">Address</label>
+                <textarea id="notes" class="input" name="address" placeholder="" style="height:100px"></textarea>
+            </div>
+            <div class="row-content row">
+                <div class="drop">
+                <label class="label text" for="city">City</label>
+                <select id="city" name="City">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Pune">Pune</option>
+                </select>
+                </div>
+                <div class="drop">
+                <label class="label text" for="state">State</label>
+                <select id="state" name="state">
+                    <option value="Telangana">Telangana</option>
+                    <option value="Karnataka">Karnatak</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                </select>
+                </div>
+                <div class="drop">
+                    <label class="label text" for="zip">ZipCode</label>
+                    <input class="input" type="text" id="zip" name="zip" placeholder="" required>
+            
+                </div>  
+            </div>
+            <div class="buttonParent" >
+                    <button type="submit" class="button submitButton" id="submitButton" >Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+                
+            </div>
+              
+                       
+        </form>
+    </div>
     
 </body>
 </html>
