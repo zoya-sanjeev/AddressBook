@@ -20,7 +20,7 @@ class AddressBookData {
       return this._phone;
     }
     set phone(phone) {
-      let phoneRegex = RegExp("^\\d{1,2}\\s\\d{10}$");
+      let phoneRegex = RegExp("^[0-9]{2,3}\\s[0-9]{10}$");
       if (phoneRegex.test(phone)) {
         this._phone = phone;
       } else throw "Invalid phone";
